@@ -48,7 +48,7 @@ do
 	if [ "$IMAGICK_install" != $IMAGICK_last ]; then
 		echo "Installation de php-imagick"
 		echo
-		"$dir"/bin/pear install PHP_CodeSniffer
+		"$dir"/bin/pecl install  imagick
 		echo
 	else
 		echo "php-imagick est déjà installé à la dernière version ($IMAGICK_install)"
@@ -64,5 +64,4 @@ do
 		echo "php-imagick est déjà activé"
 		echo
 	fi
-	#"$dir"/bin/pecl install  imagick 
 done
