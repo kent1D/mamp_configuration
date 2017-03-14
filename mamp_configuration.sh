@@ -7,6 +7,7 @@
 # - PHP_CodeSniffer (https://github.com/squizlabs/PHP_CodeSniffer)
 # - php-imagick (http://php.net/manual/fr/book.imagick.php)
 #
+
 brew=$(which brew)
 ghostscript=$(which gs)
 autoconf=$(which autoconf)
@@ -48,7 +49,7 @@ do
 	if [ "$IMAGICK_install" != $IMAGICK_last ]; then
 		echo "Installation de php-imagick"
 		echo
-		"$dir"/bin/pecl install  imagick
+		"$dir"/bin/pecl install imagick
 		echo
 	else
 		echo "php-imagick est déjà installé à la dernière version ($IMAGICK_install)"
